@@ -1,1 +1,1 @@
-# Advanced-C-Sharp-Functional-Programming-Patterns
+# Advanced C#: Functional Programming Patterns

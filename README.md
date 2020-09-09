@@ -36,6 +36,15 @@
 ### => Given the same input, it will always return the same output.
 ### => Doesn not have any observable side efects.
 
+## Benefit of Pure Functions:
+### => Are cacheable
+### => Are testable
+### => Can run in parallel
+### => Self-documenting
+
+
+
+
 
 
 

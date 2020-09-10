@@ -30,13 +30,16 @@ namespace ConsoleApp
 			//examples.DoWork();
 			// Immutable Argument Function End
 
-			// Readonly Property Start 
-			var examples = new ImmutableColor();
+			// Immutable Color  Start 
+			//var examples = new ImmutableColor();
+			//examples.DoWork();
+			// Immutable Color End 
+
+			// Side Effects and I/O 
+			var examples = new RobotFile();
 			examples.DoWork();
 
-			// Readonly Property End 
-
-
+			// Side Effects and I/O End
 
 		}
 

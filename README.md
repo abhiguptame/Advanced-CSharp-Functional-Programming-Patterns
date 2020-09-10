@@ -42,6 +42,25 @@
 ### => Can run in parallel
 ### => Self-documenting
 
+## Immutable Type:
+### => Immutable types are not changeable after creation.
+
+## Simple approach to make immutable type:
+### => Make properties or fields readonly.
+### => Set all properties in the constructors.
+
+### => Immutability isn't about forbidding change, its about how to handle change.
+
+## Good Design for an Immutable Type:
+### => No hidden private fields
+### => Provide access to member data with read-only property
+### => Instance methods must be pure functions
+### => Impure functions must be static methods or extracted into another type
+### => Create methods that allow modification to the properties
+### => Conside making a sealed class
+
+
+
 
 
 

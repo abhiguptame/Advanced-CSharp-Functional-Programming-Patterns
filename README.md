@@ -49,6 +49,8 @@
 ### => Make properties or fields readonly.
 ### => Set all properties in the constructors.
 
+### => Immutability isn't about forbidding change, its about how to handle change.
+
 
 
 

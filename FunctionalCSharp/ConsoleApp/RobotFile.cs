@@ -20,28 +20,33 @@ namespace ConsoleApp
 		public void DoWork()
 		{
 			var robots = GetRobots();
+			Console.WriteLine("RobotName | TeamName | Strength | Speed | Weight");
 			robots.ForEach(x => {
-				Console.WriteLine(x.RobotName);
+				Console.WriteLine(x.RobotName + " | " + x.TeamName + " | " + x.Strength.ToString() + " | " + x.Speed.ToString() + " | " + x.Weight.ToString());
 			});
 
-			Console.WriteLine("Totla Weight: " + GetTotalWeight(robots).ToString());
+			Console.WriteLine("Total Weight (All): " + GetTotalWeight(robots).ToString());
 
 			var blueRobots = ImmutableList.Create(robots.Where(x => x.TeamName == "Blue").ToArray());
 			int blueTeamTotal = GetTotalWeight(blueRobots);
-			Console.WriteLine("Totla Weight: " + blueTeamTotal.ToString());
+			Console.WriteLine("Total Weight (Blue Team): " + blueTeamTotal.ToString());
 
 			Console.ReadLine();
 		}
 
 		public ImmutableList<Robot> GetRobots()
 		{
+			var ran = new Random();
 			var xmlDoc = XDocument.Load(RobotFileName);
 			var robots = xmlDoc.Root.Elements("Robot")
 								.Select(x => new Robot
 								{
 									RobotName = x.Element("RobotName").Value,
 									TeamName = x.Element("TeamName").Value,
-									Weight = (int)x.Element("Weight")
+									Weight = (int)x.Element("Weight"),
+									Speed = ran.Next(1, 18),
+									Strength = ran.Next(1, 18),
+									Endurance = ran.Next(1, 18)
 								}).ToArray();
 			return ImmutableList.Create(robots);
 		}

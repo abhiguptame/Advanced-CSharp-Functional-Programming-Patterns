@@ -25,5 +25,23 @@ namespace ConsoleApp
 			}
 
 		}
+
+
+
+		public DateTime GetCurrentTimeRoundedUpToCustomMinuteIntervalRefactoredCodeToMakePureFunction(int interval, DateTime startTime)
+		{
+			//var currentTime = DateTime.Now;
+			var minutesSpan = TimeSpan.FromMinutes(interval).Ticks;
+
+			if (startTime.Ticks % minutesSpan == 0)
+			{
+				return startTime;
+			}
+			else
+			{
+				return new DateTime((startTime.Ticks / minutesSpan + 1) * minutesSpan);
+			}
+
+		}
 	}
 }

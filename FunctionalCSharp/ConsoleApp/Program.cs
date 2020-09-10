@@ -23,7 +23,12 @@ namespace ConsoleApp
 			var examples = new ImpureFunctions();
 			Console.Clear();
 			Console.WriteLine(DateTime.Now);
-			var result = examples.GetCurrentTimeRoundedUpToCustomMinuteInterval(4);
+			// Impure Function
+			//var result = examples.GetCurrentTimeRoundedUpToCustomMinuteInterval(4);
+
+			// Refactored Impure Function
+			var result = examples.GetCurrentTimeRoundedUpToCustomMinuteIntervalRefactoredCodeToMakePureFunction(4, DateTime.Now);
+
 			Console.WriteLine(result);
 		}
 

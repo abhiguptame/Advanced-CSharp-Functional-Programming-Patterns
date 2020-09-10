@@ -11,15 +11,16 @@ namespace UnitTests
 			[TestMethod]
 			public void ReturnSameResults_WhenSameInputs()
 			{
-				// arrange
+				// Arrange
 				var examples = new PureFunctions();
 				long value = 5;
 				long exponent = 3;
-				// act
+
+				// Act
 				var result1 = examples.CalcExponent(value, exponent);
 				var result2 = examples.CalcExponent(value, exponent);
 
-				// assert
+				// Assert
 				Assert.AreEqual((value ^ exponent), result1);
 				Assert.AreEqual(result1, result2);
 			}

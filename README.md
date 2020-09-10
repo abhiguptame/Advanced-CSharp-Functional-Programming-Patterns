@@ -42,6 +42,15 @@
 ### => Can run in parallel
 ### => Self-documenting
 
+## Immutable Type:
+### => Immutable types are not changeable after creation.
+
+## Simple approach to make immutable type:
+### => Make properties or fields readonly.
+### => Set all properties in the constructors.
+
+
+
 
 
 

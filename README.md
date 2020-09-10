@@ -32,6 +32,19 @@
 ### => Throws exception
 ### => Perform I/O operations (Solution: We should build our code to isolate I/O in special functions.)
 
+## A Pure Function:
+### => Given the same input, it will always return the same output.
+### => Doesn not have any observable side efects.
+
+## Benefit of Pure Functions:
+### => Are cacheable
+### => Are testable
+### => Can run in parallel
+### => Self-documenting
+
+
+
+
 
 
 

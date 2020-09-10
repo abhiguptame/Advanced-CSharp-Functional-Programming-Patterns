@@ -25,9 +25,17 @@ namespace ConsoleApp
 			//Console.ReadLine();
 			// Side Effects in Functions End
 
-			// 
-			var examples = new ImmutableArgumentFunctions();
+			// Immutable Argument Function Start 
+			//var examples = new ImmutableArgumentFunctions();
+			//examples.DoWork();
+			// Immutable Argument Function End
+
+			// Readonly Property Start 
+			var examples = new ReadOnlyProperty();
 			examples.DoWork();
+			// Readonly Property End 
+
+
 
 		}
 

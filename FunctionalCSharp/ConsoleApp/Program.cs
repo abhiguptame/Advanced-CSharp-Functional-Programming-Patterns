@@ -33,6 +33,7 @@ namespace ConsoleApp
 			// Readonly Property Start 
 			var examples = new ReadOnlyProperty();
 			examples.DoWork();
+
 			// Readonly Property End 
 
 

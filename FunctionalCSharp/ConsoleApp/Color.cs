@@ -39,6 +39,7 @@ namespace ConsoleApp.Immutable
             Red = red;
             Green = green;
             Blue = blue;
+            IsWhite = (Red == 255 && Green == 255 && Blue == 255);
         }
         public Color(byte red)
         {
@@ -54,5 +55,15 @@ namespace ConsoleApp.Immutable
             return $"Red: {Red}, Green: {Green}, Blue: {Blue}";
         }
 
+        public bool IsBlack()
+        {
+            // instance methods must be pure
+            return (Red == 0 && Green == 0 && Blue == 0);
+
+        }
+
+        // or implement as property
+
+        public bool IsWhite { get; }
     }
 }

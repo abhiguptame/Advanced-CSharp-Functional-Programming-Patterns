@@ -15,15 +15,19 @@ namespace ConsoleApp
 
 			// Side Effects in Functions Start
 
-			var examples = new SideEffectsInFunctions();
-			examples.UpdateByTwo();
-			examples.UpdateByFive();
+			//var examples = new SideEffectsInFunctions();
+			//examples.UpdateByTwo();
+			//examples.UpdateByFive();
 
-			examples.WorkWithList();
-			examples.TotalTheNumbers();
+			//examples.WorkWithList();
+			//examples.TotalTheNumbers();
 
-			Console.ReadLine();
+			//Console.ReadLine();
 			// Side Effects in Functions End
+
+			// 
+			var examples = new ImmutableArgumentFunctions();
+			examples.DoWork();
 
 		}
 

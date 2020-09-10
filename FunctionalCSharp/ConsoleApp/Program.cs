@@ -31,7 +31,7 @@ namespace ConsoleApp
 			// Immutable Argument Function End
 
 			// Readonly Property Start 
-			var examples = new ReadOnlyProperty();
+			var examples = new ImmutableColor();
 			examples.DoWork();
 
 			// Readonly Property End 

@@ -10,7 +10,7 @@ namespace ConsoleApp
 		{
 			// Immutable types internal state is not changeable after creation.
 
-			DateTime dt1, dt2; // DateTime is of immutable type
+			DateTime dt1, dt2; //
 
 			// set some properties in the constructor
 			dt1 = new DateTime(year: 2025, month: 10, day: 26);

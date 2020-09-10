@@ -7,11 +7,23 @@ namespace ConsoleApp
 	{
 		static void Main(string[] args)
 		{
-			// Impure Functions Starts
-			Timer t = new Timer(TimerCallback, null, 0, 1000);
-			Console.ReadLine();
+			// Impure Functions Start
 
-			// Impure Functions Ends
+			//Timer t = new Timer(TimerCallback, null, 0, 1000);
+			//Console.ReadLine();
+			// Impure Functions End
+
+			// Side Effects in Functions Start
+
+			var examples = new SideEffectsInFunctions();
+			examples.UpdateByTwo();
+			examples.UpdateByFive();
+
+			examples.WorkWithList();
+			examples.TotalTheNumbers();
+
+			Console.ReadLine();
+			// Side Effects in Functions End
 
 		}
 

@@ -19,10 +19,17 @@ namespace ConsoleApp
 
 		public void DoWork()
 		{
-			var robotNames = GetRobots();
-			robotNames.ForEach(x => {
+			var robots = GetRobots();
+			robots.ForEach(x => {
 				Console.WriteLine(x.RobotName);
 			});
+
+			Console.WriteLine("Totla Weight: " + GetTotalWeight(robots).ToString());
+
+			var blueRobots = ImmutableList.Create(robots.Where(x => x.TeamName == "Blue").ToArray());
+			int blueTeamTotal = GetTotalWeight(blueRobots);
+			Console.WriteLine("Totla Weight: " + blueTeamTotal.ToString());
+
 			Console.ReadLine();
 		}
 
@@ -42,6 +49,16 @@ namespace ConsoleApp
 		public string SaveToFile()
 		{
 			return null;
+		}
+
+		public int GetTotalWeight(ImmutableList<Robot> robots)
+		{
+			int total = 0;
+			foreach (Robot robot in robots)
+			{
+				total += robot.Weight;
+			}
+			return total;
 		}
 	}
 }

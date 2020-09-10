@@ -10,9 +10,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="RobotNames.xml">
+    <Content Include="RobotNames.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    </Content>
   </ItemGroup>
 
 </Project>

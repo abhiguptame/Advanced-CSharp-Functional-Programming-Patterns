@@ -42,12 +42,23 @@ namespace ConsoleApp
 			// Side Effects and I/O End
 
 			// Expression Refactor Start			
-			var examples = new ExpressionRefactor();
-			examples.DoWork();
+			//var examples = new ExpressionRefactor();
+			//examples.DoWork();
 
 			// Expression Refactor End
 
+			// Functions Examples Start
+			//var examples = new FunctionsExamples();
+			//examples.DoWork();
 
+			// Functions Examples End
+
+			// Higher Order Functions Start
+			var examples = new HigherOrderFunctions();
+			examples.DoWork();
+
+			// Higher Order Functions End
+			
 
 		}
 

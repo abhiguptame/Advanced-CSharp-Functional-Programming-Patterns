@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsoleApp
 {
-    public class Expressions
+    public class ExpressionsExamples
     {
 		// From the Microsoft docs
 		// Expressions can consist of a literal value, 

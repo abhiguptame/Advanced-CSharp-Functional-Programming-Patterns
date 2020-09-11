@@ -54,10 +54,24 @@ namespace ConsoleApp
 			// Functions Examples End
 
 			// Higher Order Functions Start
-			var examples = new HigherOrderFunctions();
-			examples.DoWork();
+			//var examples = new HigherOrderFunctions();
+			//examples.DoWork();
 
 			// Higher Order Functions End
+
+			// Composition Patterns Start
+			//var examples = new CompositionPatterns();
+			//examples.DoWorkWithFunc();
+
+			// Composition Patterns End
+
+			// Pipeline Composition Pattern Start
+
+			var examples = new PipelineCompositionPatterns();
+			examples.DoWorkWithPipeline();
+
+			// Pipeline Composition Pattern End
+
 			
 
 		}

@@ -59,6 +59,14 @@
 ### => Create methods that allow modification to the properties
 ### => Conside making a sealed class
 
+## Favour expressions over statemnets:
+### => Statements: Statements perform actions and will have side effects.
+### => Expressions represent a value, oftern from a calculation.
+### => An expression yields a value and can be used in places where a value is expected.
+### => Expressions can consist of a literal value, a method invocation, an operator and its operands, or a simple name. Simple names can be the name of a variable, type member, method parameter, namespace or type.
+
+
+
 
 
 

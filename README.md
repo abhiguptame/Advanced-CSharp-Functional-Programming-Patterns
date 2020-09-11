@@ -79,8 +79,21 @@
 ## Pipeline Pattern:
 ### => Provides a way to group function calls.
 
+## Map:
+### => Map is a higher order function.
+### => It applies the function to each item in the list.
+### => The list is called a functor in functional programming.
+### => In C#, use IEnumerable```<T>``` for the functor.
+### => There is a map function in LINQ, it is called select.
 
-
+| Functional | .NET |
+|------------|------------|
+| map | Select|
+| filter | Where|
+| bind | SelectMany |
+| bind | ContinueWith |
+| fold | Sum |
+| fold | Aggregate |
 
 
 

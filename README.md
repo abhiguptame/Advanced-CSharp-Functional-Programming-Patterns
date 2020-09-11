@@ -95,8 +95,7 @@
 | fold | Sum |
 | fold | Aggregate |
 
-
-
+Recommended book: "Functional Programming in C#" by Enrico Buonanna
 
 
 

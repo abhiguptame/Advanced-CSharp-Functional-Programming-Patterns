@@ -89,12 +89,18 @@ namespace ConsoleApp
 			// Pipeline Using IEnummerbale Composition Pattern End		
 
 			// Map Using LINQ Select Start
-			var examples = new MapUsingLINQSelect();
-			examples.SelectWithNoTransform();
-			examples.SelectWithNumberTransform();
-			examples.SelectProjectToAnotherType();
+			//var examples = new MapUsingLINQSelect();
+			//examples.SelectWithNoTransform();
+			//examples.SelectWithNumberTransform();
+			//examples.SelectProjectToAnotherType();
 
 			// Map Using LINQ Select Start
+
+			// Filter With LINQ Where Start
+			var examples = new FilterUsingLINQWhere();
+			examples.FilterSimple();
+			examples.FilterForPrimeNumbers();
+			//Filter With LINQ Where End
 
 		}
 

@@ -97,13 +97,23 @@ namespace ConsoleApp
 			// Map Using LINQ Select Start
 
 			// Filter With LINQ Where Start
-			var examples = new FilterUsingLINQWhere();
-			examples.FilterSimple();
-			examples.FilterForPrimeNumbers();
+			//var examples = new FilterUsingLINQWhere();
+			//examples.FilterSimple();
+			//examples.FilterForPrimeNumbers();
 			//Filter With LINQ Where End
 
-		}
+			// Flatten Using LINQ SelectMany Start 
+			//var examples = new FlattenUsingLINQSelectMany();
+			//examples.JoinExample();
 
+			// Flatten Using LINQ SelectMany End
+
+			// Aggregate Using LINQ Start
+			var examples = new AggregateUsingLINQ();
+			examples.AggregateExample();
+
+			// Aggregate Using LINQ End
+		}
 
 		#region Impure Functions
 

@@ -49,9 +49,9 @@ namespace ConsoleApp
 
         #endregion Previous examples
 
-        public static T PerformOperation<T>(this T value, Func<T, T> performer) where T : struct
-        {
-            return performer(value);
-        }
+        //public static T PerformOperation<T>(this T value, Func<T, T> performer) where T : struct
+        //{
+        //    return performer(value);
+        //}
     }
 }

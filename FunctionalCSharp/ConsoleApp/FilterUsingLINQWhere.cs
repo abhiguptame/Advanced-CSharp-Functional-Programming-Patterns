@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleApp
 {
-    internal class FilterWithLINQWhere
+    internal class FilterUsingLINQWhere
     {
 		public void FilterSimple()
 		{

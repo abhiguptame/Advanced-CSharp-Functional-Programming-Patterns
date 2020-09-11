@@ -36,10 +36,18 @@ namespace ConsoleApp
 			// Immutable Color End 
 
 			// Side Effects and I/O 
-			var examples = new RobotFile();
-			examples.DoWork();
+			//var examples = new RobotFile();
+			//examples.DoWork();
 
 			// Side Effects and I/O End
+
+			// Expression Refactor Start			
+			var examples = new ExpressionRefactor();
+			examples.DoWork();
+
+			// Expression Refactor End
+
+
 
 		}
 

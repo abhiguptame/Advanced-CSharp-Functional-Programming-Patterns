@@ -67,12 +67,26 @@ namespace ConsoleApp
 
 			// Pipeline Composition Pattern Start
 
-			var examples = new PipelineCompositionPatterns();
-			examples.DoWorkWithPipeline();
+			//var examples = new PipelineCompositionPatterns();
+			//examples.DoWorkWithPipeline();
 
 			// Pipeline Composition Pattern End
 
-			
+
+			// Pipeline Composition Pattern Start
+
+			//var examples = new PipelineUsingGenericCompositionPatterns();
+			//examples.DoWorkWithPipeine();
+
+			// Pipeline Composition Pattern End
+
+
+			// Pipeline Composition Pattern Start
+
+			var examples = new PipelineUsingIEnummerableCompositionPatterns();
+			examples.UseEnumerablePipeline();
+
+			// Pipeline Using IEnummerbale Composition Pattern End			
 
 		}
 

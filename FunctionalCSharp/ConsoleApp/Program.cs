@@ -83,10 +83,18 @@ namespace ConsoleApp
 
 			// Pipeline Composition Pattern Start
 
-			var examples = new PipelineUsingIEnummerableCompositionPatterns();
-			examples.UseEnumerablePipeline();
+			//var examples = new PipelineUsingIEnummerableCompositionPatterns();
+			//examples.UseEnumerablePipeline();
 
-			// Pipeline Using IEnummerbale Composition Pattern End			
+			// Pipeline Using IEnummerbale Composition Pattern End		
+
+			// Map Using LINQ Select Start
+			var examples = new MapUsingLINQSelect();
+			examples.SelectWithNoTransform();
+			examples.SelectWithNumberTransform();
+			examples.SelectProjectToAnotherType();
+
+			// Map Using LINQ Select Start
 
 		}
 

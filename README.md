@@ -65,6 +65,22 @@
 ### => An expression yields a value and can be used in places where a value is expected.
 ### => Expressions can consist of a literal value, a method invocation, an operator and its operands, or a simple name. Simple names can be the name of a variable, type member, method parameter, namespace or type.
 
+## Composition Patterns:
+### => Functional Composition
+### => Currying
+### => Pipelining
+
+## Functional Composition:
+### => Combining functions into a new function
+
+## Currying:
+### => A pattern for deconstruction functions with many arguments.
+
+## Pipeline Pattern:
+### => Provides a way to group function calls.
+
+
+
 
 
 
